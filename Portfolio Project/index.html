@@ -4,171 +4,164 @@
 <!-- Head -->
 	<head>
 		<meta charset="UTF-8">
-		<title>Terry Murdock</title>
+		<title>Terry Murdock | Portfolio</title>
+		
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Custom CSS -->	
 		<link rel="stylesheet" type="text/css" href="./Stylesheet/Portfolio.css">
-		<!-- bootstrap css -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	</head>
 
-	<!-- Body -->
+<!-- Body -->
 	<body class="Background"> 
 
 	<!-- Navbar -->
-		<!-- <div class="Navbar">
-			<a class="active" href="#Home">Home</a> 
-			<a href="#About">About</a>
-			<a href="#GitHub">GitHub</a>
-			<a href="#Contact">Contact</a>
-		</div> -->
+		<nav class="navbar navbar-light navbar-expand-lg p-0 fixed-top" style="background-color: #d1ef75;">
+			<a class="navbar-brand pl-1 font-weight-bold" href="#">Terry Murdock | Portfolio</a>
+				
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-0" style="background-color: #d1ef75;">
-			<!-- <ul class="nav nav-pills">
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav nav-pills">
 					<li class="nav-item">
-					  <a class="nav-link navActive" id="navState"  href="#Home">Home</a>
+						<a class="nav-link active text-white font-weight-bold" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link navInactive" href="#About">About</a>
-					</li>	  
-					<li class="nav-item">
-					  <a class="nav-link navInactive" href="#GitHub">GitHub</a>
+						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link navInactive" href="#Contact">Contact</a>
+						<a class="nav-link" href="#github">GitHub</a>
 					</li>
-			</ul> -->
-
-			<div class="btn-group btn-group-toggle" data-toggle="buttons">
-				<label class="btn active">
-					<input type="radio" name="options" id="option1" autocomplete="off" checked> Home
-				</label>
-				<label class="btn">
-					<input type="radio" name="options" id="option2" autocomplete="off"> About
-				</label>
-				<label class="btn">
-				  <input type="radio" name="options" id="option3" autocomplete="off"> GitHub
-				</label>
-				<label class="btn">
-					<input type="radio" name="options" id="option3" autocomplete="off"> Contact
-				  </label>
-  
-			  </div>
-
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>    
+				</ul>
+			</div>
 		</nav>
-			  
-	<!-- Home -->
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
-		<br>
 
-	<!-- Video -->
-		<div id="Home">
-			<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-				<source src="./Stylesheet/Video/Typing_color.mp4" type="video/mp4">
-				Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-			</video>
-		</div>
-
-	<!-- Video text --> 
-		<div class="Video_Text"> 
-			<h1 style="color:white;">Terry Murdock's Portfolio</h1>
-				<p> 
-					<strong>
-						<center>
-							<q>The most important property of a program is whether it accomplishes the intention of its user.</q>	
-							<br>- Sir Charles Antony Richard Hoare<br>
-							<br>
-							Thank you for taking the time to visit my portfolio website.<br> Here you will discover my passion for computer programming, my background,<br> and the experiences that have brought me to where I am today.<br>
-							<br>Please enjoy and feel free to <a href="#Contact">Contact</a> me! 
-						</center>	
-					</strong>
-				</p> 
-		</div>
-
-	<!-- About section -->
-		<div class="Row" id="About"> 
-			<div class="Column_2"> 
-	
-	<!-- Left column -->
-			<img src="./Stylesheet/Images/brain_computer.png" alt="Laptop">
-			</div>
-	
-			<div class="Column_1"> <!-- Right column -->
-				<h1>About</h2>
-					<p>I am a software developer who loves to code! I began my career in the IT industry as a manager, but once I started learning web design there was no looking back.<br><br>To continue my journey I completed <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and I am now trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
-			</div>
-		</div>
-
-	<!-- GitHub section -->
-		<div class="Row" id="GitHub">
-			<div class="Column_1"> 
-				
-	<!-- Left column -->
-		<h1>GitHub</h1>
-			<p>You can view my coding projects on my GitHub profile here:<br>
-				<center><a href="https://github.com/terrymurdock" target="_blank">Terry Murdock's GitHub</a></center></p>
-			</div>
-			
-			<div class="Column_2"> 
-				
-	<!-- Right column -->
-				<a href="https://github.com/terrymurdock" target="_blank"><img src="Stylesheet/Images/Octocat_GitHub.png" alt="GitHub"></a>
-			</div>
-		</div>
-
-	<!-- Contact section -->
-		<div class="Row" id="Contact"> 
-			<div class="Column_3"> 
-	<!-- Contact image, left column -->
-				<img src="Stylesheet/Images/email.png" alt="Contact_Image">
-			</div>
+	<!-- Home Section -->
+		<div class="container-fluid">				
+			<div class="row" id="home">			
+			<!-- Video -->
+				<div class="col p-0">
+					<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+						<source src="./Stylesheet/Video/Typing_color.mp4" type="video/mp4">
+						Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+					</video>
 		
-			<div class="Column_1"> 
-				<!-- Contact form, right "column" -->
-				<h1>Contact</h2> 
-					<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
-						<label>Name</label>
-							<input type="text" placeholder="Please enter your name here">
-						<label>Email</label>
-							<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-						<label>Message</label>
-							<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+					<!-- Video Text -->
+						<div class="jumbotron mb-0 p-3 jumbotron-fluid" id="jumbo">
 							<div class="container">
-								<div class="row">
-									<div class="col text-center">
-										<button type="button" class="btn popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="Your information will not be shared with third parties and you will not be placed on any mailing lists.">Submit
-										</button>
+								<p class="lead text-white font-weight-bold text-center text-wrap"> 
+								<q class="font-italic font-weight-bolder">The most important property of a program is whether it accomplishes the intention of its user.</q><br>
+								- Sir Charles Antony Richard Hoare<br>
+								<br>
+								Thank you for taking the time to visit my portfolio website, where you will discover my passion for computer programming and the experiences that have brought me to where I am today.<br>
+								Please enjoy and feel free to <a href="#Contact">Contact</a> me! 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		<!-- About section -->
+			<div class="row" id="about">
+				<!-- Left column -->
+					<div class="col-lg bg-secondary overflow-hidden Column_2">
+						<img class="img-fluid my-5" src="./Stylesheet/Images/brain_computer.png" alt="Computer Brain">
+					</div>
+				<!-- Right column -->
+					<div class="col-lg bg-light pt-5 border-bottom border-dark Column_1">
+						<h1 class="text-center">About</h2>
+						<p class="text-center font-weight-bold">I am a software developer who loves to code! I began my career in the IT industry as a manager, but once I started learning web design there was no looking back.<br><br>To continue my journey I completed <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and I am now trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+					</div>
+			</div>
+
+		<!-- GitHub section -->
+			<div class="row" id="github">
+				<!-- Left column -->
+					<div class="col-lg bg-light pt-5 Column_1">
+						<h1 class="text-center">GitHub</h1>
+						<p class="text-center font-weight-bold">You can view my coding projects on my GitHub profile here:<br>
+						<a href="https://github.com/terrymurdock" target="_blank">Terry Murdock's GitHub</a></p>
+					</div>
+				<!-- Right column -->
+					<div class="col-lg bg-secondary overflow-hidden border-bottom border-white Column_2">
+						<a href="https://github.com/terrymurdock" target="_blank">
+							<img class="img-fluid my-5" src="Stylesheet/Images/Octocat_GitHub.png" alt="GitHub"></a>
+					</div>
+			</div>
+
+		<!-- Contact section -->
+			<div class="row" id="contact">
+				<!-- Left column -->
+					<div class="col-lg bg-secondary pt-3 pr-3 overflow-hidden border-bottom border-dark Column_2">
+						<img class="img-fluid my-5" src="Stylesheet/Images/email.png" alt="Contact_Image">
+					</div>
+				<!-- Right column -->
+					<div class="col-lg bg-light pt-5 border-bottom border-dark Column_1">
+						<h1 class="text-center">Contact</h2>
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1" class=" font-weight-bold">Name</label >
+									<input type="string" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Enter Please enter your first and last name here">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1" class=" font-weight-bold">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email here">
+									<small id="emailHelp" class="form-text text-muted">
+										Your email will not be shared with anyone else.
+									</small>
+								</div>
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1" class=" font-weight-bold">Message</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									<small id="messageHelp" class="form-text text-muted">
+										Please include a short description of your project.
+									</small>
+								</div>
+								<div class="container mb-3">
+									<div class="row">
+										<div class="col text-center">
+											<button type="button" class="btn shadow-sm font-weight-bold popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="Your information will not be shared with third parties and you will not be placed on any mailing lists.">
+												Submit
+											</button>
+										</div>
 									</div>
 								</div>
-							</div>
-					</form>
-			</div>
+							</form>						
+					</div>
+				</div>
 		</div>
-	
-	<!-- Footer section -->
-		<footer>
-			<p>
-				<center>&copy <a href="https://terrymurdock.com/">TDMurdock Designs</a></center><br>
-			</p>
-		</footer>
-	
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	
-		<script>		
-			$('.popover-dismiss').popover({
-				trigger: 'hover'
-			})				
-		</script>
-
-		<!-- <script>
-				$( "#navState" ).on( "click", function() {
-					$( ".navActive" ).switchClass( "navActive", "navInactive", 1000 );
-					$( ".navInactive" ).switchClass( "navInactive", "navActive", 1000 );
-				});				
-			
-		</script> -->
 		
+		<!-- Footer section -->
+			<div class="container-fluid p-3 bg-white text-center font-weight-bold">	
+				<footer>
+					&copy <a href="https://terrymurdock.com/">TDMurdock Designs</a>
+				</footer>
+			</div>
+
+			<!-- JavaScript section -->	
+			<script>
+
+				$(document).ready(function(){
+					$('ul li a').click(function(){
+						$('li a').removeClass("active text-white font-weight-bold");
+						$(this).addClass("active text-white font-weight-bold");
+					});
+				});
+
+				$('.popover-dismiss').popover({
+					trigger: 'hover'
+				})
+
+			</script>
+			
 	</body>
 
 </html>
