@@ -14,6 +14,7 @@
 	<!-- Custom CSS -->	
 		<link rel="stylesheet" type="text/css" href="./Stylesheet/Portfolio.css">
 	</head>
+<!-- End Head -->
 
 <!-- Body -->
 	<body class="Background"> 
@@ -21,11 +22,14 @@
 	<!-- Navbar -->
 		<nav class="navbar navbar-light navbar-expand-lg p-0 fixed-top" style="background-color: #d1ef75;">
 			<a class="navbar-brand pl-1 font-weight-bold" href="#">Terry Murdock | Portfolio</a>
-				
+			
+		<!-- Mobile toggler and collapse navbar -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 			</button>
+		<!-- End Mobile toggler and collapse navbar -->
 
+		<!-- Nav buttons -->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav nav-pills">
 					<li class="nav-item">
@@ -42,69 +46,95 @@
 					</li>    
 				</ul>
 			</div>
-		</nav>
+		<!-- End Nav buttons -->
 
-	<!-- Home Section -->
-		<div class="container-fluid">				
-			<div class="row" id="home">			
-			<!-- Video -->
+		</nav>
+	<!-- End Navbar -->
+
+	<!-- Columns Section -->
+		<div class="container-fluid">
+		
+			<!-- Home Section -->				
+			<div class="row" id="home">
+			
+			<!-- Video Section -->
 				<div class="col p-0">
 					<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
 						<source src="./Stylesheet/Video/Typing_color.mp4" type="video/mp4">
 						Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
 					</video>
 		
-					<!-- Video Text -->
-						<div class="jumbotron mb-0 p-3 jumbotron-fluid" id="jumbo">
-							<div class="container">
-								<p class="lead text-white font-weight-bold text-center text-wrap"> 
-								<q class="font-italic font-weight-bolder">The most important property of a program is whether it accomplishes the intention of its user.</q><br>
-								- Sir Charles Antony Richard Hoare<br>
-								<br>
-								Thank you for taking the time to visit my portfolio website, where you will discover my passion for computer programming and the experiences that have brought me to where I am today.<br>
-								Please enjoy and feel free to <a href="#Contact">Contact</a> me! 
-								</p>
-							</div>
+				<!-- Video Text -->
+					<div class="jumbotron mb-0 p-3 jumbotron-fluid" id="jumbo">
+						<div class="container">
+							<p class="lead text-white font-weight-bold text-center text-wrap"> 
+							<q class="font-italic font-weight-bolder">The most important property of a program is whether it accomplishes the intention of its user.</q><br>
+							- Sir Charles Antony Richard Hoare<br>
+							<br>
+							Thank you for taking the time to visit my portfolio website, where you will discover my passion for computer programming and the experiences that have brought me to where I am today.<br>
+							Please enjoy and feel free to <a href="#Contact">Contact</a> me! 
+							</p>
 						</div>
 					</div>
+				<!-- End Video Text -->
+
 				</div>
+			<!-- End Video Section -->
+
+			</div>
+		<!--End Home Section -->
 
 		<!-- About section -->
 			<div class="row" id="about">
+
 				<!-- Left column -->
-					<div class="col-lg bg-secondary overflow-hidden Column_2">
+					<div class="col-lg bg-secondary order-lg-0 overflow-hidden Column_2">
 						<img class="img-fluid my-5" src="./Stylesheet/Images/brain_computer.png" alt="Computer Brain">
 					</div>
+				<!-- End Left column -->
+				
 				<!-- Right column -->
-					<div class="col-lg bg-light pt-5 border-bottom border-dark Column_1">
+					<div class="col-lg bg-light order-lg-1 pt-5 border-bottom border-dark Column_1">
 						<h1 class="text-center">About</h2>
 						<p class="text-center font-weight-bold">I am a software developer who loves to code! I began my career in the IT industry as a manager, but once I started learning web design there was no looking back.<br><br>To continue my journey I completed <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and I am now trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
 					</div>
+				<!-- End Right column -->
+					
 			</div>
+		<!-- End About section -->
 
 		<!-- GitHub section -->
 			<div class="row" id="github">
-				<!-- Left column -->
-					<div class="col-lg bg-light pt-5 Column_1">
+
+				<!-- Right column, shows after in mobile -->
+				<div class="col-lg bg-secondary order-lg-3 overflow-hidden border-bottom border-white Column_2">
+						<a href="https://github.com/terrymurdock" target="_blank">
+							<img class="img-fluid my-5" src="Stylesheet/Images/Octocat_GitHub.png" alt="GitHub"></a>
+					</div>
+				<!-- End Right column -->
+				
+				<!-- Left column, shows before in mobile -->
+					<div class="col-lg bg-light order-lg-2 pt-5 Column_1">
 						<h1 class="text-center">GitHub</h1>
 						<p class="text-center font-weight-bold">You can view my coding projects on my GitHub profile here:<br>
 						<a href="https://github.com/terrymurdock" target="_blank">Terry Murdock's GitHub</a></p>
 					</div>
-				<!-- Right column -->
-					<div class="col-lg bg-secondary overflow-hidden border-bottom border-white Column_2">
-						<a href="https://github.com/terrymurdock" target="_blank">
-							<img class="img-fluid my-5" src="Stylesheet/Images/Octocat_GitHub.png" alt="GitHub"></a>
-					</div>
-			</div>
+				<!-- End Left column -->
 
-		<!-- Contact section -->
+			</div>
+		<!-- End GitHub section -->
+		
+			<!-- Contact section -->
 			<div class="row" id="contact">
+
 				<!-- Left column -->
-					<div class="col-lg bg-secondary pt-3 pr-3 overflow-hidden border-bottom border-dark Column_2">
+					<div class="col-lg bg-secondary order-lg-4 pt-3 pr-3 overflow-hidden border-bottom border-dark Column_2">
 						<img class="img-fluid my-5" src="Stylesheet/Images/email.png" alt="Contact_Image">
 					</div>
+				<!-- End Left column -->
+
 				<!-- Right column -->
-					<div class="col-lg bg-light pt-5 border-bottom border-dark Column_1">
+					<div class="col-lg bg-light order-lg-5 pt-5 border-bottom border-dark Column_1">
 						<h1 class="text-center">Contact</h2>
 							<form>
 								<div class="form-group">
@@ -136,8 +166,13 @@
 								</div>
 							</form>						
 					</div>
+				<!-- End Right column -->
+
 				</div>
+			<!-- End Contact section -->
+
 		</div>
+	<!-- End Columns section -->
 		
 		<!-- Footer section -->
 			<div class="container-fluid p-3 bg-white text-center font-weight-bold">	
@@ -145,23 +180,26 @@
 					&copy <a href="https://terrymurdock.com/">TDMurdock Designs</a>
 				</footer>
 			</div>
+		<!-- End Footer section -->
 
-			<!-- JavaScript section -->	
+		<!-- JavaScript section -->	
 			<script>
-
-				$(document).ready(function(){
-					$('ul li a').click(function(){
-						$('li a').removeClass("active text-white font-weight-bold");
-						$(this).addClass("active text-white font-weight-bold");
+				// Navbar - inserts active, white text, and bolds the active nav item
+					$(document).ready(function(){
+						$('ul li a').click(function(){
+							$('li a').removeClass("active text-white font-weight-bold");
+							$(this).addClass("active text-white font-weight-bold");
+						});
 					});
-				});
-
-				$('.popover-dismiss').popover({
-					trigger: 'hover'
-				})
+				// Submit button popover text
+					$('.popover-dismiss').popover({
+						trigger: 'hover'
+					})
 
 			</script>
+		<!-- End JavaScript section -->
 			
 	</body>
+<!-- End Body -->
 
 </html>
