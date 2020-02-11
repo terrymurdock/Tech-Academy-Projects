@@ -1,67 +1,281 @@
 /* Body */
-body {
+body, html {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
-}
-
-/* Navbar */
-.nav-item a {
-    font-size: 20px;
-}
-
-.nav-item a:hover {
-    background-color: #5DD9EC;
-    font-weight: bold;
+	height: 100%;
+	min-height:200vh;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Video */
-#Typing_Video {
+#typingVideo {
 	position: fixed; /* This fixes our video to the page  */
-	min-width: 100%; /* This ensures the video is displayed across the full width of the page */
-	z-index: -1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%; /* This ensures the video is displayed across the full width of the page */
+	z-index: -10;
+}
+
+.shade {
+    background-color: rgba(0,0,0, 0.7);
+}
+
+pre {
+	position: absolute;
+	top: 10%;
+	left: -80%;
+}
+
+.var-highlight{
+    color: #23C9E5;
+}
+
+.string-highlight{
+    color: #d1ef75;
+}
+
+#typewriter{
+        font-size: 2em;
+        margin: 0;
+        font-family: "Courier New";
+
+        &:after{
+			content: "|";
+            animation: blink 500ms linear infinite alternate;
+        }
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#intro-button {
+	background-color: black;
+	margin-top: 50%;
+	margin-bottom: 10%;
+	animation-name: fade-in-btn;
+	animation-duration: 1s;  
+	animation-delay: 17s;
+	animation-fill-mode: both;
+}
+
+@keyframes fade-in-btn {
+	from {top: 0px; background-color: transparent;}
+	to {top: 200px; background-color: #23C9E5;}
+}
+
+#intro-button-text {
+	color: white;
+	animation-name: fade-in-text;
+	animation-duration: 1s;  
+	animation-delay: 17s;
+	animation-fill-mode: both;
+}
+
+@keyframes fade-in-text {
+	from {top: 0px; color: transparent;}
+	to {top: 200px;
+		color: white;
+		font-size: 24px;
+		-webkit-text-stroke: 0px #282828;
+		text-shadow: 0px 1px 3px #282828;}
+}
+
+/* Navigation */
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text, 
+#copy {
+    color: #d1ef75 !important;
+}
+
+.navbar-custom .nav-item .nav-link {
+	color: #eee;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+	color: white;
+	font-weight: bold;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item .nav-link.active,
+.navbar-custom .nav-item:focus .nav-link {
+	color: #23C9E5 !important;
+	font-weight: bolder;
+}
+
+.navbar-custom{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-custom.scrolled, .end-footer {
+  background:black;
 }
 
 /* Text over the video */ 
-.jumbotron {
-	margin-top: 35%;
+.blockquote {
+	margin-top: 43%;
 }
 
-#jumbo {
-    background-color: rgba(0,0,0, 0.5);
+#Quote_Text_Color {
+	color: #23C9E5 !important;
+}
+
+#down-chevron {
+	position: relative;
+	animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+	from {top: 0px;}
+	to {bottom: 10px;}
+}
+
+.card-header, .modal-header {
+	background: #d1ef75;
 }
 
 /* Paragraph elements */
 p {
-	letter-spacing: 1px; /* This expands the text slightly */
+	color: black;
 	font-size: 20px;
 }
 
-/* Image elements */
-img {
-	filter: grayscale(60%); /* This rids our pictures of 75% of their color */
+h2 span {
+	font-size: 16px;
 }
 
-/* Submit Button element */
+.icons {
+	color: #d1ef75;
+	font-size: 50px;
+}
+
+#plane-rotate {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari 3-8 */
+	transform: rotate(45deg);
+}
+
+.border {
+	border-color: #23C9E5 !important;
+	border-width: 2px !important;
+}
+
 .btn {
-	background-color: #d1ef75;
+	background: #23C9E5;
 }
 
-/* Paragraph element hover effect */
-p:hover {
-	color: #00004d;	
-    transition: transform 1s;
-	transform: scale(1.03);
+#Submit_Button {
+	color: white;
+	-webkit-text-stroke: 0px #282828;
+	text-shadow: 0px 1px 3px #282828;
 }
 
-/* Image element hover effects */
-img:hover {
-	filter: grayscale(0%);   /* Brings back most of the image's color when hovered over */
-    /* transition: transform 2s;
-	transform: scale(1.2); */
-	transition: transform 2s;
-	transform: scale(1.2);
+/* Button jiggle */
+@import "compass/css3";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Submit Button element hover effects */
-button:hover {
-	background-color: #5DD9EC;
+.jiggle {
+  cursor: pointer;
+  animation: anim 2s ease-in infinite;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes anim {
+  5% {
+    transform: scale(1.1, 0.9);
+  }
+  10% {
+    transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  15% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 992px) {
+	/* change navbar-brand color on hover */
+	.navbar-custom a.navbar-brand:hover {
+		font-weight: bold;
+	}
+	
+	#ai-brain-3d {
+		animation-name: ai-brain-3d-rotate;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;
+	}
+	
+	@keyframes ai-brain-3d-rotate {
+		0%	{transform: rotateY(0deg);}
+		100%	{transform: rotateY(360deg);}
+	}
+}
+
+@media (max-width: 991.98px) {
+	/* Video */
+	body {
+		background-image: url("Images/typing.jpg");
+		background-color: #282828;
+	}
+
+	#typingVideo {
+		visibility: hidden;
+	}
+	
+	nav.navbar {
+	  background: black;
+	}
+
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+		font-size: 14px;
+	}
+
+	.blockquote {
+		margin-top: 12%;
+	}
+	
+	#down-chevron {
+		visibility: hidden;
+	}
+
+	#linkedin-icon {
+		width: 10%;
+	}
+
+	#resume-body {
+		width: 20%;
+	}
+
+	q {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	h5 {
+		font-size: 12px;
+	}
 }
