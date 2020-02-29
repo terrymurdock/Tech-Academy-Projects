@@ -1,8 +1,7 @@
 /* Body */
 body, html {
-	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+	margin: 0; /* This ensures our site displays all the way to the edge of the browser screen */
 	height: 100%;
-	min-height:200vh;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,80 +15,8 @@ body, html {
 	z-index: -10;
 }
 
-.shade {
-    background-color: rgba(0,0,0, 0.7);
-}
-
-pre {
-	position: absolute;
-	top: 10%;
-	left: -80%;
-}
-
-.var-highlight{
-    color: #23C9E5;
-}
-
-.string-highlight{
-    color: #d1ef75;
-}
-
-#typewriter{
-        font-size: 2em;
-        margin: 0;
-        font-family: "Courier New";
-
-        &:after{
-			content: "|";
-            animation: blink 500ms linear infinite alternate;
-        }
-}
-
-@-webkit-keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@-moz-keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-#intro-button {
-	background-color: black;
-	margin-top: 50%;
-	margin-bottom: 10%;
-	animation-name: fade-in-btn;
-	animation-duration: 1s;  
-	animation-delay: 17s;
-	animation-fill-mode: both;
-}
-
-@keyframes fade-in-btn {
-	from {top: 0px; background-color: transparent;}
-	to {top: 200px; background-color: #23C9E5;}
-}
-
-#intro-button-text {
-	color: white;
-	animation-name: fade-in-text;
-	animation-duration: 1s;  
-	animation-delay: 17s;
-	animation-fill-mode: both;
-}
-
-@keyframes fade-in-text {
-	from {top: 0px; color: transparent;}
-	to {top: 200px;
-		color: white;
-		font-size: 24px;
-		-webkit-text-stroke: 0px #282828;
-		text-shadow: 0px 1px 3px #282828;}
+.shade, nav.navbar {
+	background: rgba(0,0,0, 0.6);
 }
 
 /* Navigation */
@@ -126,7 +53,7 @@ pre {
 
 /* Text over the video */ 
 .blockquote {
-	margin-top: 43%;
+	margin-top: 37%;
 }
 
 #Quote_Text_Color {
@@ -233,14 +160,14 @@ h2 span {
 
 @media (max-width: 991.98px) {
 	/* Video */
-	body {
+	/*body {
 		background-image: url("Images/typing.jpg");
 		background-color: #282828;
 	}
 
 	#typingVideo {
 		visibility: hidden;
-	}
+	}*/
 	
 	nav.navbar {
 	  background: black;
@@ -248,11 +175,11 @@ h2 span {
 
 	.navbar-custom .navbar-brand,
 	.navbar-custom .navbar-text {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.blockquote {
-		margin-top: 12%;
+		margin-top: 10%;
 	}
 	
 	#down-chevron {
