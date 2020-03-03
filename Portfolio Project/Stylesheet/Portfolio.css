@@ -3,7 +3,28 @@ body, html {
 	margin: 0; /* This ensures our site displays all the way to the edge of the browser screen */
 	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+	/* background-color: black; */
 }
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	/* background-color: rgb(0,0,0); */
+	background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+  }
 
 /* Video */
 #typingVideo {
@@ -12,7 +33,7 @@ body, html {
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%; /* This ensures the video is displayed across the full width of the page */
-	z-index: -10;
+	z-index: -1;
 }
 
 .shade, nav.navbar {
@@ -21,10 +42,14 @@ body, html {
 
 /* Navigation */
 /* change the brand and text color */
+.navHidden {
+	visibility: hidden;
+}
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text, 
 #copy {
-    color: #d1ef75 !important;
+	color: #d1ef75 !important;
 }
 
 .navbar-custom .nav-item .nav-link {
@@ -53,7 +78,8 @@ body, html {
 
 /* Text over the video */ 
 .blockquote {
-	margin-top: 37%;
+	position: relative;
+	margin-top: 44%;
 }
 
 #Quote_Text_Color {
