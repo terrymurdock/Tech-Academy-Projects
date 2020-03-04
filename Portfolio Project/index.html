@@ -25,19 +25,22 @@
 
 	<!-- Overlay -->
 		<div class="overlay" id="overlayNav">
-            <div class="overlay-content">
+            <div class="overlay-content" onclick="closeNav(); openNav();">
                 <div class="row">
                     <div class="col-10">
-                        <div style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                            <img class="img-fluid" src="Stylesheet/Images/Cover_Header.png">
+						<div style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+							<h1 class="display-1" style="color: #d1ef75;">Terry Murdock</h1>
+							<hr style="border: 3px solid white;">
+							<h1 class="display-3" style="color: #23C9E5;">IT Professional</h1>
+                            <!-- <img class="img-fluid" src="Stylesheet/Images/Cover_Header.png"> -->
                         </div>
                     </div>
 					<div class="col-2">
-                        <a class="active" href="#home" onclick="closeNav(); openNav();"><img class="img-fluid mt-4 mb-2 mr-5" width="175" height="auto" src="Stylesheet/Images/home_nav.png" alt="Home navigation"></a><br> 
-                        <a href="#about" onclick="closeNav(); openNav();"><img class="img-fluid my-2 mr-5" width="175" height="auto" src="Stylesheet/Images/about_nav.png" alt="Home navigation"></a><br> 
-                        <a href="#skills" onclick="closeNav(); openNav();"><img class="img-fluid my-2 mr-5" width="175" height="auto" src="Stylesheet/Images/skills_nav.png" alt="Home navigation"></a><br> 
-                        <a href="#skills" onclick="closeNav(); openNav();"><img class="img-fluid my-2 mr-5" width="175" height="auto" src="Stylesheet/Images/projects_nav.png" alt="Home navigation"></a><br>
-                        <a href="#contact" onclick="closeNav(); openNav();"><img class="img-fluid mt-2 mb-5 mr-5" width="175" height="auto" src="Stylesheet/Images/contact_nav.png" alt="Home navigation"></a> 
+                        <!-- <a class="active" href="#home" onclick="closeNav(); openNav();"><img class="img-fluid mt-4 mb-2 mr-5" width="175" height="auto" src="Stylesheet/Images/home_nav.png" alt="Home navigation"></a><br>  -->
+                        <a class="active" href="#about" onclick="closeNav(); openNav();"><img class="img-fluid mt-3 mb-2 mr-5" width="80%" height="auto" src="Stylesheet/Images/ai_brain.png" alt="Home navigation"></a><br> 
+                        <a href="#skills" onclick="closeNav(); openNav();"><img class="img-fluid my-2 mr-5" width="85%" height="auto" src="Stylesheet/Images/cover-skills-chart.svg" alt="Home navigation"></a><br> 
+                        <a href="#skills" onclick="closeNav(); openNav();"><img class="img-fluid my-2 mr-5" width="85%" height="auto" src="Stylesheet/Images/projects-GitHub.png" alt="Home navigation"></a><br>
+                        <a href="#contact" onclick="closeNav(); openNav();"><img class="img-fluid mt-2 mb-3 mr-5" width="95%" height="auto" src="Stylesheet/Images/contact-email.png" alt="Home navigation"></a> 
                     </div>
                 </div>
             </div>
@@ -121,33 +124,50 @@
 					
 					<!-- Right column -->
 						<div class="col-sm-8 py-sm-5 order-sm-1 Column_2">
-							<div class="card my-sm-5 border-0 bg-light">
+							<div class="card border-0 bg-light">
 								<div class="card-header text-dark">
 									<h2>About <a href='https://www.linkedin.com/in/murdockterry' target="_blank"><img class="mt-n2" id="linkedin-icon" src="./Stylesheet/Images/about-linkedin-icon.png" width="5%" alt="LinkedIn icon"></a></h2>
 								</div>
 								<div class="card-body">
-									<p>
-										<a href="https://tdmurdockdesigns-my.sharepoint.com/:f:/g/personal/terry_terrymurdock_com/EgeMDfEVc4pBqher7os4tfcB2owAGmjRvLHsJFxujV7YvQ?e=IGO019" target="_blank"><img class="float-right mr-0 mb-1 ml-1 jiggle" id="resume-body" src="./Stylesheet/Images/about-resume-cv.png" width="15%" data-toggle="tooltip" data-placement="bottom" title="Resume/CV download" alt="Resume/CV download"></a>
-										I am a team player, adept at working with people at all levels, who brings a diverse background in Information Technology, having worked as a team manager in both hardware and software support, launch training and readiness management, global outsourcing business process management, and management of numerous programs and projects. In the past decade, I have increased my technical knowledge by working in web design and Microsoft SharePoint Administration, and most recently completing a Software Developer Boot Camp. I now have an in-depth knowledge of HTML 5 and CSS 3, as well as, the ability to read, understand, and basic coding skills in JavaScript, C#, Python, and SQL, all of which make me a strong technical resource. I am also proficient in forms design in both Microsoft InfoPath and Power Apps, as well as, workflow design in SharePoint Designer and Power Automate.
-										<!-- 
-										<img src="./Stylesheet/Images/html-5_logo.png" height="56">
-										<img src="./Stylesheet/Images/css-3_logo.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/js.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/jquery.png" height="56">
-										<img src="./Stylesheet/Images/photoshop.png" height="56">
-										<img src="./Stylesheet/Images/illustrator.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/indesign.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/dw.png" height="56"><br><br>
-										-->
+									<a href="https://tdmurdockdesigns-my.sharepoint.com/:f:/g/personal/terry_terrymurdock_com/EgeMDfEVc4pBqher7os4tfcB2owAGmjRvLHsJFxujV7YvQ?e=IGO019" target="_blank"><img class="float-right mr-0 mb-1 ml-1 jiggle" id="resume-body" src="./Stylesheet/Images/about-resume-cv.png" width="15%" data-toggle="tooltip" data-placement="bottom" title="Resume/CV download" alt="Resume/CV download"></a>
+									<p>I am a team player, adept at working with people at all levels, who brings a diverse background in Information Technology.</p>
+
+									<p>My management experience includes:</p>
+									<ul class="ml-4">
+										<li><strong>Team Manager</strong> in both hardware and software support</li>
+										<li><strong>Program Manager</strong> of launch training/readiness and quality support initiatives</li>
+										<li><strong>Group Program Manager</strong> of a business process management framework for global outsourcing</li>
+									</ul>
 										
-										<!-- 
-										<img src="./Stylesheet/Images/c-sharp.png" height="56">
-										<img src="./Stylesheet/Images/sql.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/python.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/React.js_logo.png" height="56">&nbsp;
-										<img src="./Stylesheet/Images/bootstrap-solid.png" height="56">&nbsp;&nbsp;
-										-->
-									</p>
+									<p>In the past decade, I have increased my technical knowledge by:</p>
+									<ul class="ml-4">
+										<li>Attending Bellevue College Web and Graphic Design programs, where I learned</li>
+										<li class="ml-3" type="circle"><strong>HTML 5</strong>, <strong>CSS 3</strong>, <strong>Scripting</strong>, and <strong>Adobe Illustrator, InDesign, and Photoshop</strong></li>
+										<li>Working as a Microsoft SharePoint Administrator, where I became proficient in</li>
+										<li class="ml-3" type="circle"><strong>SharePoint Online</strong>, <strong>Workflow Design</strong>, and <strong>InfoPath and Power Apps Forms</strong></li>
+										<li>Completing The Tech Academy Software Developer Boot Camp to gain the ability to read, understand, and perform basic coding skills in</li>
+										<li class="ml-3" type="circle"><strong>JavaScript</strong>, <strong>C#</strong>, <strong>Python</strong>, and <strong>SQL</strong></li>
+									</ul>
+
+									<p>I enjoy learning and am always striving to increase my knowledge and skills to make myself a valuable employee and technical resource.</p>
+									<!-- 
+									<img src="./Stylesheet/Images/html-5_logo.png" height="56">
+									<img src="./Stylesheet/Images/css-3_logo.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/js.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/jquery.png" height="56">
+									<img src="./Stylesheet/Images/photoshop.png" height="56">
+									<img src="./Stylesheet/Images/illustrator.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/indesign.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/dw.png" height="56"><br><br>
+									-->
+									
+									<!-- 
+									<img src="./Stylesheet/Images/c-sharp.png" height="56">
+									<img src="./Stylesheet/Images/sql.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/python.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/React.js_logo.png" height="56">&nbsp;
+									<img src="./Stylesheet/Images/bootstrap-solid.png" height="56">&nbsp;&nbsp;
+									-->
 								</div>
 							</div>
 						</div>
@@ -163,16 +183,189 @@
 						<img class="img-fluid my-5 mx-auto" src="Stylesheet/Images/projects-GitHub.png" alt="GitHub">
 					</div>
 				
-					<div class="col-sm-8 py-sm-5 order-sm-4 order-lg-2 Column_1">
-						<div class="card my-sm-5 border-0 bg-light">
+					<div class="col-sm-8 py-sm-4 order-sm-4 order-lg-2 Column_1">
+						<h2 id="spFontColor">Skills/Projects</h2>
+						<div class="bd-example">
+							<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+								<li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+							  </ol>
+							  <div class="carousel-inner">
+								<div class="carousel-item active bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-mgmt-people-chart">
+									<h3 class="spSubFontColor mt-2 text-center">People Management</h3>
+									<img src="Stylesheet/Images/skills-management-people.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-mgmt-people-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">People Management Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-mgmt-people-chart.svg" class="img-fluid" alt="People Management Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-mgmt-process-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Business Process Management</h3>
+									<img src="Stylesheet/Images/skills-management-process.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-mgmt-process-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Business Process Management Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-mgmt-process-chart.svg" class="img-fluid" alt="Microsoft Office 365 Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-management-program-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Program Management</h3>
+									<img src="Stylesheet/Images/skills-management-program.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-management-program-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">	
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Program/Project Management Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-program-dev-chart.svg" class="img-fluid" alt="Programming Language Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-web-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Web Development</h3>
+									<img src="Stylesheet/Images/skills-program-web.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-program-web-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Web Development Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-program-web-chart.svg" class="img-fluid" alt="Web Development Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-dev-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Programming</h3>
+									<img src="Stylesheet/Images/skills-program-dev.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-program-dev-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Programming Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-program-dev-chart.svg" class="img-fluid" alt="Programming Language Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-ms-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Microsoft Office 365</h3>
+									<img src="Stylesheet/Images/skills-program-ms.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-program-ms-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Microsoft Office 365 Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-program-ms-chart.svg" class="img-fluid" alt="Microsoft Office 365 Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="carousel-item bg-dark">
+									<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-graphics-chart">
+									<h3 class="spSubFontColor mt-2 text-center">Graphic Design</h3>
+									<img src="Stylesheet/Images/skills-graphics.svg" class="d-block mt-2 mb-5 mx-auto w-50" alt="...">
+									</a>
+										<div class="modal fade skills-graphics-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header text-dark">
+														<h5 class="modal-title">Adobe Creative Cloud Skills</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="Stylesheet/Images/skills-graphics-chart.svg" class="img-fluid" alt="Programming Language Skills Chart"/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+				
+						<!-- <div class="card border-0 bg-light">
 							<div class="card-header text-dark">
 								<h2>Skills/Projects</h2>
 							</div>
-							<div class="card-body bg-light">
-								<div class="card-group">
+							<div class="card-body bg-light"> -->
+								  								
+								<!-- <div class="card-group"> -->
 								<!-- Development Skills -->
-									<div class="card bg-light border-0">
-										<h4 class="card-title">Development</h4>
+									<!-- <div class="card bg-light border-0">
+										<h4 class="card-title">Design & Development</h4>
 										<div class="card-body p-0">
 											<div class="card mb-2 p-lg-3 bg-light border-0">
 												<h5 class="card-title">Web</h5>
@@ -240,11 +433,11 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								<!-- End Development Skills -->
 
 								<!-- Design Skills -->
-									<div class="card bg-light border-0">
+									<!-- <div class="card bg-light border-0">
 										<h4 class="card-title">Design</h4>
 										<div class="card-body p-0">
 											<div class="card mb-2 p-lg-3 bg-light border-0">
@@ -269,11 +462,11 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								<!-- End Design Skills -->
 
 								<!-- Management Skills -->
-									<div class="card bg-light border-0">
+									<!-- <div class="card bg-light border-0">
 										<h4 class="card-title">Management</h4>
 										<div class="card-body p-0">
 											<div class="card mb-2 p-lg-3 bg-light border-0">
@@ -342,11 +535,11 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								<!-- End Management Skills -->
-								</div>
-							</div>
-						</div>
+								<!-- </div> -->
+							<!-- </div>
+						</div> -->
 					</div>
 
 				</div>
@@ -410,14 +603,14 @@
 				<div class="row py-sm-5 shade" id="contact">
 
 					<!-- Left column -->
-						<div class="col-sm-4 py-sm-5 border-0 order-sm-5 Column_2">
+						<div class="col-sm-4 py-sm-4 border-0 order-sm-5 Column_2">
 							<img class="img-fluid my-5 mx-auto" src="Stylesheet/Images/contact-email.png" alt="Contact_Image">
 						</div>
 					<!-- End Left column -->
 
 					<!-- Right column -->
-						<div class="col-sm-8 py-sm-5 order-sm-6 border-0 Column_1">
-							<div class="card my-sm-5 border-0 bg-light">
+						<div class="col-sm-8 py-sm-4 order-sm-6 border-0 Column_1">
+							<div class="card border-0 bg-light">
 								<div class="card-header text-dark">
 									<h2>Contact</h2>
 								</div>
@@ -450,7 +643,7 @@
 												<button type="button" class="btn text-white shadow-sm font-weight-bold popover-dismiss jiggle" id="Submit_Button" data-container="body" data-toggle="popover" data-placement="right" data-content="Your information will not be shared with third parties and you will not be placed on any mailing lists.">
 													Submit
 												</button><br><br>
-												<p>Thank you, you will be contacted shortly!</p>
+												<p>Thank you for visiting my website, you will be contacted shortly!</p>
 												<img class="img-fluid mb-0 w-25" src="Stylesheet/Images/contact-signature-blue.png" alt="Signature">		
 											</div>
 										</div>
