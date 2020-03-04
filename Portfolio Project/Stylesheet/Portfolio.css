@@ -48,7 +48,7 @@ body, html {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text, 
-#spFontColor, #copy {
+.spFontColor, #copy {
 	color: #d1ef75 !important;
 }
 
