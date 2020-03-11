@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="Stylesheet/Images/favicon-tdm.png"/>
+        <title>Terry Murdock | Portfolio</title>
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > -->
+        <!-- Optional theme -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" > -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="Stylesheet/Portfolio.css">
+        
+        <script src="form.js"></script>
+
+		<script src="./Code/typed.js"></script>
+
+		<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+		
+    </head>
+<!-- End Head -->
+
+	<!-- Overlay -->
+	<div class="overlay" id="overlayNav">
+		<div class="overlay-content" onclick="closeNav(); openHomeNav(); unhideBQ();">
+			<div class="row">
+				<div class="col-10">
+					<div style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+						<h1 class="display-1" style="color: #d1ef75;">Terry Murdock</h1>
+						<hr style="border: 4px solid white; border-radius: 5px;">
+						<div class="overlaySubHeading">
+							<h1 class="display-3"><span class="typing"></span></h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<!-- <a class="active" href="#home" onclick="closeNav(); openNav();"><img class="img-fluid mt-4 mb-2 mr-5" width="175" height="auto" src="Stylesheet/Images/home_nav.png" alt="Home navigation"></a><br>  -->
+					<a class="active" href="#about" onclick="closeNav(); openHomeNav(); unhideBQ()"><img class="img-fluid my-2 mr-5" width="80%" height="auto" src="./Stylesheet/Images/ai_brain.png" alt="Home navigation"></a><br> 
+					<a href="#skills" onclick="closeNav(); openHomeNav(); unhideBQ();"><img class="img-fluid mb-2 mr-5" width="90%" height="auto" src="./Stylesheet/Images/skills-chart.svg" alt="Home navigation"></a><br> 
+					<a href="#skills" onclick="closeNav(); openHomeNav(); unhideBQ();"><img class="img-fluid mb-2 mr-5" width="85%" height="auto" src="./Stylesheet/Images/version_control.svg" alt="Home navigation"></a><br>
+					<a href="#contact" onclick="closeNav(); openHomeNav(); unhideBQ();"><img class="img-fluid mb-2 mr-5" width="95%" height="auto" src="./Stylesheet/Images/contact-email.png" alt="Home navigation"></a> 
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END Overlay -->
+
+<!-- Navbar -->
+	<nav id="nav-scroll" class="navbar navHidden navbar-dark navbar-custom navbar-expand-lg p-0 fixed-top">
+
+		<!--style="background-color: #d1ef75;"-->
+			<a class="navbar-brand mr-auto mt-1 ml-2" href="#home">
+				<img class="img-fluid mt-n2 mr-2 rounded-circle" src="./Stylesheet/Images/nav-circle-tmurdock.png" alt="Terry Murdock"> Terry Murdock | IT Professional
+			</a>
+			
+		<!-- Mobile toggler and collapse navbar -->
+			<button class="navbar-toggler mr-1 mb-1 ml-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			</button>
+		<!-- End Mobile toggler and collapse navbar -->
+
+		<!-- Nav buttons -->
+			<div class="collapse navbar-collapse ml-2" id="navbarNav">
+				<ul class="navbar-nav ml-auto m-2">
+					<li class="nav-item">
+						<a class="nav-link active" href="#home">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills/Projects</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>    
+				</ul>
+			</div>
+		<!-- End Nav buttons -->
+	</nav>
+<!-- End Navbar -->
+
+<!-- Body -->
+    <body data-spy="scroll" data-target="#nav-scroll">
+
+	<!-- Main Section -->
+		<div class="container-fluid">
+			
+		<!-- Home Section -->				
+			<div class="row" id="home">
+			
+				<!-- Video Section -->
+					<div class="col p-0">
+						<video autoplay muted loop id="typingVideo"> <!-- Makes the video play automatically, on a loop and with no sound -->
+							<source src="./Stylesheet/Video/Typing_color.mp4" type="video/mp4">
+							Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+						</video>
+				
+						<!-- Video Text -->
+							<blockquote class="blockquote mb-0 text-white text-center shade">
+								<br>
+								<q>The most important property of a program is whether it accomplishes the intention of its user.</q>
+								<footer class="blockquote-footer">
+									<a href="https://en.wikipedia.org/wiki/Tony_Hoare" id="Quote_Text_Color" target="_blank">Sir Charles Antony Richard Hoare</a>
+								</footer>
+								<img class="img-fluid mt-4 mx-auto d-block" id="down-chevron" src="./Stylesheet/Images/home-down-chevron.png" alt="down arrow">
+							</blockquote>
+						<!-- End Video Text -->
+
+					</div>
+				<!-- End Video Section -->
+
+			</div>
+		<!--End Home Section -->
+
+		<!-- About section -->
+			<div class="row py-sm-2 py-lg-5 shade" id="about">
+
+			<!-- Left column -->
+				<div class="col-sm-4 py-sm-5 border-0 order-sm-0 Column_1" id="ai-brain-3d">
+					<img class="section-image img-fluid my-5" src="./Stylesheet/Images/ai_brain.png" alt="Artificial and Human Intelligence"/>
+				</div>
+			<!-- End Left column -->
+			
+			<!-- Right column -->
+				<div class="column-margin col-sm-8 py-sm-2 py-lg-5 order-sm-1 Column_2">
+					<div class="card bg-transparent">
+						<div class="card-header text-dark">
+							<h2>About <a href='https://www.linkedin.com/in/murdockterry' target="_blank"><img class="mt-n2" id="linkedin-icon" src="./Stylesheet/Images/about-linkedin-icon.png" width="5%" alt="LinkedIn icon"></a></h2>
+						</div>
+						<div class="card-body text-white shade">
+							<a href="https://tdmurdockdesigns-my.sharepoint.com/:f:/g/personal/terry_terrymurdock_com/EgeMDfEVc4pBqher7os4tfcB2owAGmjRvLHsJFxujV7YvQ?e=IGO019" target="_blank"><img class="float-right mr-0 mb-1 ml-1 jiggle" id="resume-body" src="./Stylesheet/Images/about-resume-cv.png" width="15%" data-toggle="tooltip" data-placement="bottom" title="Resume/CV download" alt="Resume/CV download"></a>
+							<p>I am a team player, adept at working with people at all levels, who brings a diverse background in Information Technology.</p>
+
+							<p>My management experience includes:</p>
+							<ul class="ml-4">
+								<li><strong>Team Manager</strong> in both hardware and software support</li>
+								<li><strong>Program Manager</strong> of launch training/readiness and quality support initiatives</li>
+								<li><strong>Group Program Manager</strong> of a business process management framework for global outsourcing</li>
+							</ul>
+								
+							<p>In the past decade, I have increased my technical knowledge by:</p>
+							<ul class="ml-4">
+								<li>Attending <a href="https://www.tomboloinstitute.com/" target="blank_"><span class="textOutline">Bellevue College Continuing Education</span></a> Web and Graphic Design programs, where I learned</li>
+								<li class="ml-3" type="circle"><strong>HTML 5</strong>, <strong>CSS 3</strong>, <strong>Scripting</strong>, and <strong>Adobe Illustrator, InDesign, and Photoshop</strong></li>
+								<li>Working as a Microsoft SharePoint Administrator, where I became proficient in</li>
+								<li class="ml-3" type="circle"><strong>SharePoint Online</strong>, <strong>Workflow Design</strong>, and <strong>InfoPath and Power Apps Forms</strong></li>
+								<li>Completing <a href="https://learncodinganywhere.com/" target="blank_"><span class="textOutline">The Tech Academy</span></a> Software Developer Boot Camp to gain the ability to read, understand, and perform basic coding skills in</li>
+								<li class="ml-3" type="circle"><strong>JavaScript</strong>, <strong>C#</strong>, <strong>Python</strong>, and <strong>SQL</strong></li>
+							</ul>
+
+							<p>I enjoy learning and am always striving to increase my knowledge and skills to make myself a valuable employee and technical resource. Please <a href="#contact"><span class="textOutline">contact me</span></a> if you have any questions or would like to work together.</p>
+						</div>
+					</div>
+				</div>
+			<!-- End Right column -->
+					
+			</div>
+		<!-- End About section -->
+
+		<!-- Skills/Projects section -->
+			<div class="row py-sm-2 py-lg-5 shade" id="skills">
+
+			<!-- Right column -->
+				<div class="col-sm-4 py-sm-5 order-sm-3 Column_2">
+					<img class="section-image img-fluid my-5" src="./Stylesheet/Images/skills-projects.svg" alt="GitHub">
+				</div>
+			<!-- End Right column -->
+
+			<!-- Left column -->
+				<div class="col-sm-8 py-sm-2 py-lg-5 order-sm-2 Column_1">
+
+					<div class="card my-4 mx-auto bg-transparent">
+
+						<div class="card-header text-dark">
+							<h2>Skills/Projects</h2>
+						</div>
+
+						<div class="card-body shade">
+
+							<div id="carouselCaptions" class="carousel slide mb-3" data-ride="carousel">
+
+								<ol class="carousel-indicators mb-5">
+									<li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselCaptions" data-slide-to="1"></li>
+									<li data-target="#carouselCaptions" data-slide-to="2"></li>
+									<li data-target="#carouselCaptions" data-slide-to="3"></li>
+									<li data-target="#carouselCaptions" data-slide-to="4"></li>
+									<li data-target="#carouselCaptions" data-slide-to="5"></li>
+									<li data-target="#carouselCaptions" data-slide-to="6"></li>
+								</ol>
+								
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-mgmt-people-chart">
+											<h5 class="spFontColor my-2 text-center">People Management</h5>
+											<img src="./Stylesheet/Images/skills-management-people.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-mgmt-people-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">People Management Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<ul class="ml-3">
+																<li class="ml-1">Team Manager</li>
+																<li class="ml-1">Program Manager</li>
+																<li class="ml-1">Group Program Manager: Business Process Management Framework</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-mgmt-process-chart">
+											<h5 class="spFontColor my-2 text-center">Business Process Management</h5>
+											<img src="./Stylesheet/Images/skills-management-process.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-mgmt-process-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Business Process Management Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<ul class="ml-3">
+																<li class="ml-1">Managed a team of Business Process Program Managers</li>
+																<li class="ml-1">Supported a global vendor management and outsourcing organization</li>
+																<li class="ml-1">Team maintained and updated over 30 business processes in the framework</li>
+																<li class="ml-1">First vendor management organization to recieve <a href="https://www.copc.com/copc-standards/for-vmos/" target="_blank">COPC CX Standard for Vendor Management Organizations (VMOs)</a> certification - received the 3 years I managed the process framework</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-management-program-chart">
+											<h5 class="spFontColor my-2 text-center">Program Management</h5>
+											<img src="./Stylesheet/Images/skills-management-program.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-management-program-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">	
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Program/Project Management Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<ul class="ml-3">
+																<li class="ml-1">Technical Support Call Quality Initiatives</li>
+																<li class="ml-1">Worldwide Partner Launch Readiness and Training</li>
+																<li class="ml-1">Technical Support Outsourcing: In-country, Near-shore, Off-shore</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-web-chart">
+										<h5 class="spFontColor my-2 text-center">Web Development</h5>
+										<img src="./Stylesheet/Images/skills-program-web.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-program-web-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Web Development Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<img src="./Stylesheet/Images/skills-program-web-chart.svg" class="img-fluid" alt="Web Development Skills Chart"/>
+														</div>
+														<div class="row">
+															<div class="col-sm-1 text-center">
+																<ion-icon name="pizza" class="icons"></ion-icon>
+															</div>
+															<div class="col-sm-11">
+																<p>An online pizza delivery business menu and order summary modal built using HTML5, JavaScript, and Bootstrap 4.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-dev-chart">
+										<h5 class="spFontColor my-2 text-center">Programming</h5>
+										<img src="./Stylesheet/Images/skills-program-dev.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-program-dev-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Programming Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<img src="./Stylesheet/Images/skills-program-dev-chart.svg" class="img-fluid" alt="Programming Language Skills Chart"/>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-program-ms-chart">
+										<h5 class="spFontColor my-2 text-center">Microsoft Office 365</h5>
+										<img src="./Stylesheet/Images/skills-program-ms.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-program-ms-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Microsoft Office 365 Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<img src="./Stylesheet/Images/skills-program-ms-chart.svg" class="img-fluid" alt="Microsoft Office 365 Skills Chart"/>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<a href="#myModal" class="mx-sm-1 mx-lg-5" data-toggle="modal" data-target=".skills-graphics-chart">
+										<h5 class="spFontColor my-2 text-center">Graphic Design</h5>
+										<img src="./Stylesheet/Images/skills-graphics.svg" class="carousel-image d-block my-5 mx-auto" alt="...">
+										</a>
+											<div class="modal fade skills-graphics-chart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header text-dark">
+															<h5 class="modal-title">Adobe Creative Cloud Skills</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body text-white">
+															<img src="./Stylesheet/Images/skills-graphics-chart.svg" class="img-fluid" alt="Programming Language Skills Chart"/>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+								</div>
+
+								<a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+
+							</div>
+
+							<h5 class="text-center" style="color: #23C9E5;">Click slides for more details</h5>
+
+						</div>
+
+					</div>
+
+				</div>
+			<!-- End Left column -->
+
+			</div>
+		<!-- End Skills/Projects section -->
+
+		<!-- Projects section -->
+			<!-- <div class="row py-5 shade" id="projects">
+
+					<div class="col-lg-4 py-5 order-sm-3 overflow-hidden border-0 Column_2">
+						<a href="https://github.com/terrymurdock" target="_blank">
+							<img class="img-fluid my-5 mx-auto" src="Stylesheet/Images/projects-GitHub.png" alt="GitHub"></a>
+					</div>
+				
+					<div class="col-lg-8 py-5 order-sm-4 order-lg-2 Column_1">
+						<div class="card my-5 border-0 bg-light">
+							<div class="card-header text-dark">
+								<h2>Projects</h2>
+							</div>
+							<div class="card-body py-lg-4">
+								<div class="row">
+									<div class="col-sm-1 text-center">
+										<ion-icon name="pizza" class="icons"></ion-icon>
+									</div>
+									<div class="col-sm-11">
+										<p>An online pizza delivery business menu and order summary modal built using HTML5, JavaScript, and Bootstrap 4.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-1 text-center">
+										<ion-icon name="airplane" class="icons" id="plane-rotate"></ion-icon>
+									</div>
+									<div class="col-sm-11">
+										<p>A vacation planning web application built using Python, Django, HTML5, CSS3, JavaScript, and Bootstrap 4.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-1 text-center">
+										<ion-icon name="time" class="icons"></ion-icon>
+									</div>
+									<div class="col-sm-11">
+										<p>A job assignment and resource management web application built using C#, .NET Framework, MVC, HTML5, CSS3, JavaScript, and Bootstrap 4.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+										<p text-center>You can view my coding projects on my GitHub profile here:<br>
+											<a href="https://github.com/terrymurdock" class="links" target="_blank">
+												<ion-icon name="logo-github"></ion-icon> Terry Murdock's GitHub <ion-icon name="logo-github"></ion-icon>
+											</a>
+										</p>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+
+			</div> -->
+		<!-- End Projects section -->
+			
+		<!-- Contact section -->
+			<div class="row pt-sm-2 pt-lg-5 pb-2 shade" id="contact">
+
+			<!-- Left column -->
+				<div class="col-sm-4 py-sm-4 order-sm-5 Column_2">
+					<img class="section-image img-fluid my-5" src="./Stylesheet/Images/contact-email.png" alt="Contact_Image">
+				</div>
+			<!-- End Left column -->
+
+			<!-- Right column -->
+				<div class="col-sm-8 py-sm-4 order-sm-6 Column_1">
+
+					<div class="card my-3 mx-auto bg-transparent">
+
+						<div class="card-header text-dark">
+							<h2>Contact</h2>
+						</div>
+
+						<div class="card-body text-white shade">
+
+							<form class="needs-validation" novalidate role="form" method="post" id="reused_form" >
+								<div class="form-group">
+									<label for="name">Name:  									<small class="text-light">First and last</small>
+									</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+										  <div class="input-group-text"><ion-icon name="person-sharp"></ion-icon></div>
+										</div>
+										<input type="text" class="form-control" id="name" name="name" required maxlength="50">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Email:  									<small class="text-light">Your email will not be shared</small>
+									</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+										  <div class="input-group-text"><ion-icon name="mail-sharp"></ion-icon></div>
+										</div>
+										<input type="email" class="form-control" id="email" name="email" required maxlength="50">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="name">Message:  									<small class="text-light">Please provide a brief message</small>
+									</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+										  <div class="input-group-text"><ion-icon name="reader-sharp"></ion-icon></div>
+										</div>
+										<textarea class="form-control" type="textarea" name="message" required id="message" placeholder="Your Message Here" maxlength="6000" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="row" style="margin-bottom:30px;">
+									<div class="col-sm-5">
+										<img src="captcha.php" id="captcha_image"/>
+										<br/>
+										<a id="captcha_reload" href="#">reload</a> 
+									</div>
+									<div class="col-sm-6">
+										<label for="email">Enter the code from the image here:</label>
+										<input type="text" class="form-control" required id="captcha" name="captcha" >
+									</div>
+								</div>
+								<button type="submit" class="btn btn-lg text-white jiggle" id="btnContactUs">Send <ion-icon name="send-sharp"></ion-icon></button>
+							</form>
+							<div id="success_message" style="width:100%; height:100%; display:none; "> 
+								<h3>Sent your message successfully!</h3>
+								<h4>Thank you for visiting my website, you will be contacted shortly!</h4>
+								<img class="img-fluid mb-0 w-50" src="./Stylesheet/Images/contact-signature-green.png" alt="Signature">
+							</div>
+							<div id="error_message" style="width:100%; height:100%; display:none;">
+								<h3>Error</h3> 
+								Sorry there was an error sending your message. Please try again.
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			<!-- End Right column -->
+
+			</div>
+		<!-- End Contact section -->
+
+		</div>
+	<!-- End Main section -->
+
+	<!-- Footer section -->
+		<div class="end-footer container-fluid p-3 text-center">	
+			<footer>
+				<span class="font-weight-bold" id="copy">&copy</span> <a href="http://terrymurdock.com/" class="links"> TDMurdock Designs</a>
+			</footer>
+		</div>
+	<!-- End Footer section -->
+
+        <script src="./Code/script.js"></script>
+        
+    </body>
+<!-- End Body -->
+    
+</html>
